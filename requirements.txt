@@ -1,0 +1,1 @@
+fastapi>=0.115.0\nuvicorn[standard]>=0.30.0\npydantic>=2.8.0\npydantic-settings>=2.4.0\nsqlalchemy[asyncio]>=2.0.32\nasyncpg>=0.29.0\nalembic>=1.13.0\nhttpx>=0.27.0\nwebsockets>=12.0\naiohttp>=3.10.0\norjson>=3.10.0\npython-dotenv>=1.0.0\nstructlog>=24.4.0\ntenacity>=8.5.0\nredis>=5.0.0\npytest>=8.3.0\npytest-asyncio>=0.24.0\n
