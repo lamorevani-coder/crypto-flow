@@ -1,10 +1,8 @@
-# Environment and secrets
+# Secrets
 .env
-.env.*
-!.env.example
 *.key
 *.pem
-*.crt
+*.secret
 secrets/
 credentials/
 
@@ -17,36 +15,34 @@ __pycache__/
 .venv/
 venv/
 ENV/
-env/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
-.coverage
-htmlcov/
+*.egg-info/
 dist/
 build/
-*.egg-info/
-*.egg
 
 # IDE
 .idea/
 .vscode/
 *.swp
 *.swo
-*~
 .DS_Store
 
-# Logs and data
+# Logs & data
 logs/
 *.log
 data/
 postgres_data/
 redis_data/
-timescale_data/
+*.db
+*.sqlite
 
-# Docker volumes (local)
-*.sql.gz
-backup/
+# Docker
+docker-compose.override.yml
 
-# OS
-Thumbs.db
+# Coverage / tests
+htmlcov/
+.coverage
+coverage.xml
+.tox/
