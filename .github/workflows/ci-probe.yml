@@ -1,0 +1,13 @@
+name: CI Probe
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+jobs:
+  probe:
+    runs-on: macos-latest
+    steps:
+      - run: sw_vers
+      - run: xcodebuild -version
